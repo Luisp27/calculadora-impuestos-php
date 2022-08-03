@@ -27,7 +27,7 @@ function calcularImpuesto($precio, $impuesto)
         $resultado = '$' . $resultado . ' DOP';
         return $resultado;
     } catch (Exception $e) {
-        echo 'Error', $e->getMessage(), "/n";
+        return 'Error: '. $e->getMessage(). "/n";
     }
 }
 echo (calcularImpuesto(2000, 'itbis'));
